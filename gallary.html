@@ -3,73 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Country Explorer - Welcome</title>
-  
+  <title>Gallery - Country Explorer</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mercator_projection_SW.jpg/1200px-Mercator_projection_SW.jpg') no-repeat center center fixed; */
-      background: url(c1.jpeg) no-repeat  center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 20px;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      font-size: 1em;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .btn-login {
-      background-color: #007bff;
-    }
-
-    .btn-login:hover {
-      background-color: #0056b3;
-    }
-
-    .btn-guest {
-      background-color: #28a745;
-    }
-
-    .btn-guest:hover {
-      background-color: #1e7e34;
-    }
+    body { font-family: Arial, sans-serif; background:#fafafa; margin:0; padding:0; }
+    .header { background:#007bff; color:white; text-align:center; padding:20px; font-size:2em; }
+    .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; padding:20px; }
+    .gallery img { width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);}
   </style>
 
-<style>
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -169,13 +111,15 @@
       margin-top: 20px;
     }
   </style>
+
 </head>
 <body>
-  <!-- Navbar -->
+
+    <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">🌍 Country Explorer</div>
     <ul>
-      <li><a href="home.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="country-details.html">Search</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="gallery.html">Gallery</a></li>
@@ -186,21 +130,13 @@
       <li><a href="profile.html">Profile</a></li>
     </ul>
   </nav>
-
- <div class="overlay">
-    <h1>🌍 Welcome to Country Explorer</h1>
-    <p>Discover countries, explore cultures, and learn about the world.</p>
-    <div class="buttons">
-      <!-- Link to Login Page -->
-      <a href="login.html" class="btn btn-login">Login</a>
-
-      <!-- Link to Country Explorer Main Page
-      <a href="country.html" class="btn btn-guest">Explore as Guest</a> -->
-                
-
-      <!-- <button class="btn btn-login">Login</button>
-      <button class="btn btn-guest">Explore as Guest</button> -->
-    </div>
+  <div class="header">Gallery</div>
+  <div class="gallery">
+    <img src="https://flagcdn.com/w320/in.png" alt="India Flag">
+    <img src="https://flagcdn.com/w320/us.png" alt="USA Flag">
+    <img src="https://flagcdn.com/w320/fr.png" alt="France Flag">
+    <img src="https://flagcdn.com/w320/jp.png" alt="Japan Flag">
+    <img src="https://flagcdn.com/w320/br.png" alt="Brazil Flag">
   </div>
 </body>
 </html>
