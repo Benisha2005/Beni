@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer - Welcome</title>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      /* background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mercator_projection_SW.jpg/1200px-Mercator_projection_SW.jpg') no-repeat center center fixed; */
+      background: url(c1.jpeg) no-repeat  center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 1em;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login {
+      background-color: #007bff;
+    }
+
+    .btn-login:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-guest {
+      background-color: #28a745;
+    }
+
+    .btn-guest:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background: #007bff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffdd57;
+    }
+
+    main {
+      padding: 20px 30px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    main section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    main section img {
+      width: 50px;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    main section div {
+      flex: 1;
+    }
+
+    main section h2 {
+      color: #333;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    main section p {
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 Country Explorer</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="country-details.html">Search</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </nav>
+
+ <div class="overlay">
+    <h1>🌍 Welcome to Country Explorer</h1>
+    <p>Discover countries, explore cultures, and learn about the world.</p>
+    <div class="buttons">
+      <!-- Link to Login Page -->
+      <a href="login.html" class="btn btn-login">Login</a>
+
+      <!-- Link to Country Explorer Main Page -->
+      <a href="country.html" class="btn btn-guest">Explore as Guest</a>
+                
+
+      <!-- <button class="btn btn-login">Login</button>
+      <button class="btn btn-guest">Explore as Guest</button> -->
+    </div>
+  </div>
+</body>
+</html>
