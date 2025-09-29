@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background: #007bff;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffdd57;
+    }
+
+    main {
+      padding: 20px 30px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    main section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    main section img {
+      width: 50px;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    main section div {
+      flex: 1;
+    }
+
+    main section h2 {
+      color: #333;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    main section p {
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    let loggedInData=localStorage.getItem("loggedIn");
+    if(loggedInData !== "true"){
+        window.location.href="login.html";
+    }
+  </script>
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to Country Explorer</h1>
+    
+    <!-- India -->
+    <section>
+      <img src="https://flagcdn.com/w40/in.png" alt="India Flag">
+      <div>
+        <h2>India</h2>
+        <p>
+          India, officially the Republic of India, is a country in South Asia with New Delhi as its capital. It is the second-most 
+          populous country in the world, and major cities include Mumbai, Bangalore, Kolkata, and Chennai. India is famous 
+          for its diverse culture, colorful festivals such as Diwali and Holi, and iconic landmarks like the Taj Mahal. 
+          Tourists can explore Kerala’s backwaters, Jaipur’s palaces, Goa’s beaches, and the spiritual ghats of Varanasi. 
+          The country is also known for its delicious cuisine, including Biryani, Samosa, Dosa, Butter Chicken, and Chaat. 
+          Important temples like the Golden Temple in Amritsar, Brihadeeswarar Temple in Tamil Nadu, and Meenakshi Temple 
+          in Madurai attract millions of visitors every year.
+        </p>
+      </div>
+    </section>
+
+    <!-- France -->
+    <section>
+      <img src="https://flagcdn.com/w40/fr.png" alt="France Flag">
+      <div>
+        <h2>France</h2>
+        <p>
+          France, located in Western Europe, has Paris as its capital and major cities such as Lyon, Marseille, Nice, and Bordeaux. 
+          France is famous for its art, fashion, and culinary delights. Tourists flock to see landmarks like the Eiffel Tower, 
+          Louvre Museum, Mont Saint-Michel, Palace of Versailles, and the French Riviera. Historical monuments such as Notre-Dame 
+          Cathedral, Arc de Triomphe, and Sacré-Cœur Basilica add to the country’s charm. French cuisine is world-renowned, 
+          featuring croissants, baguettes, cheeses, escargot, and ratatouille. France is also celebrated for its wine, festivals, 
+          and rich cultural heritage.
+        </p>
+      </div>
+    </section>
+
+    <!-- Japan -->
+    <section>
+      <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag">
+      <div>
+        <h2>Japan</h2>
+        <p>
+          Japan is an island nation in East Asia with Tokyo as its capital, and other major cities include Osaka, Kyoto, Hiroshima, 
+          and Yokohama. Japan offers a unique blend of modern technology and traditional culture. Tourists can enjoy Mount Fuji, 
+          Tokyo Tower, Fushimi Inari Shrine, Hiroshima Peace Memorial, and the Arashiyama Bamboo Grove. The country is famous 
+          for its temples and shrines such as Kinkaku-ji (Golden Pavilion), Todai-ji, and Meiji Shrine. Japanese cuisine is 
+          popular worldwide, featuring sushi, ramen, tempura, sashimi, and mochi. Japan is also known for cherry blossoms, 
+          anime, and a rich Shinto and Buddhist heritage.
+        </p>
+      </div>
+    </section>
+
+    <!-- Brazil -->
+    <section>
+      <img src="https://flagcdn.com/w40/br.png" alt="Brazil Flag">
+      <div>
+        <h2>Brazil</h2>
+        <p>
+          Brazil, the largest country in South America, has Brasília as its capital, with Rio de Janeiro, São Paulo, Salvador, 
+          and Fortaleza as major cities. Known for its vibrant culture and natural beauty, Brazil attracts tourists to Christ 
+          the Redeemer, Copacabana Beach, the Amazon Rainforest, Iguazu Falls, and Sugarloaf Mountain. Famous monuments include 
+          the São Paulo Cathedral and Oscar Niemeyer’s architectural works in Brasília. Brazilian cuisine includes feijoada, 
+          pão de queijo, brigadeiro, moqueca, and coxinha. Brazil is renowned for its Carnival festival, football culture, 
+          and the biodiversity of the Amazon.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Country Explorer. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
